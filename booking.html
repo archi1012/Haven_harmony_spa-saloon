@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon & Spa Appointment Booking</title>
+  <link rel="stylesheet" href="booking.css">
+  <link rel = "icon" href =  "https://img.freepik.com/premium-vector/vector-logo-design-beauty-salon-hair-salon-cosmetic-design-line-face-fashion-concept-beauty-minimalist-vector-illustration_501705-155.jpg"
+			type = "image/x-icon">
+</head>
+<body>
+
+  <header>
+    <p class="Tittle">HARMONY HAVEN SPA AND SALOON</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <p>Explore our range of services and book your appointment today.</p>
+
+    <ul class="services-list">
+      <li>Haircut - <em>Rs 100</em></li>
+      <li>Massage - <em>Rs 2000</em></li>
+      <li>Manicure - <em>Rs 450</em></li>
+      <li>Waxing - <em>Rs 250</em></li>
+      <li>Haircare - <em>Rs 1000</em></li>
+      <li>Skincare - <em>Rs 4500</em></li>
+    </ul>
+    <h2>Book an Appointment</h2>
+
+    <form action="appointment_handler.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value = "haircut">Haircut</option>
+        <option value="massage">Massage</option>
+        <option value="manicure">Maincure</option>
+        <option value="waxing">Waxing</option>
+        <option value="haircare">Haircare</option>
+        <option value="skincare">Skincare</option>
+        
+    </select>
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" name="date" required>
+    <label for="time">Preferred Time:</label>
+    <input type="time" id="time" name="time" required>
+    <button onclick="sendMessage()" value="SUBMIT" type="submit">Book Now</button>
+
+    </form>
+</section>
+
+<section>
+    <h2>Contact Information</h2>
+    <p>If you have any questions or need assistance, feel free to contact</p>
+    <p>Email: nihal0009kumar@gmail.com</p>
+    <p>Phone: +91-82269 95269</p>
+</section>
+<script>
+
+  function sendMessage(){
+    alert("Your appointment is booked at alloted time! Thank you for staying with us.");
+    setTimeout(async() => {
+                    window.location.href = "intro.html"
+              }, 1000);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>     
+<body>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7263993670667!2d75.70256857392722!3d31.25599656015907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1700321938287!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h1 align="center">
+        <font face="Helvetica">
+            Contact Us
+        </font>
+    </h1>
+    <hr color="#22DFF6" size="8" width="7%"/>
+
+    <table cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <td width="50%">
+                <form >
+                    <label for="name">Name <span>*</span></label>
+                    <input id="name" type="text" required="required" />
+                    <label for="email">E-mail <span>*</span></label>
+                    <input id="email" type="email" required="required" />
+                    <label for="tel">Phone number <span>*</span></label>
+                    <input id="tel" type="tel" required="required" />
+                    <label for="subject">Subject <span>*</span></label>
+                    <input id="subject" type="text" required="required" />
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" rows="5" required="required"></textarea>
+                    <input class="hey" type="submit"  onclick="sendMessage()" value="SEND YOUR MESSAGE" />
+                </form>
+            </td>
+            <td width="50%">
+                <h3><font face="Helvetica">Nice to hear You!</font></h2>
+                <p><font face="Helvetica" color="silver" size="2"><b>The Harmony Haven spa itself is a very successful company. The great pleasures, come to the premium experience and for good health for your skin and body,We glad your presence.</b></font></p>
+                <h3><font face="Helvetica">Contact Information</font></h2>
+                <h5><font face="Helvetica">Business Hours</font></p>
+                <p><font face="Helvetica" size="2" color="silver"><b>Our support service works for you from Monday to Friday from 8 am to 7 pm <br/>Wait for our reply within 24 hours <br/>Saturday and Sunday: 8 am to 9 pm</b></font></p>
+                <h5><font face="Helvetica">Address</font></h5>
+                <p><font face="Helvetica" size="2" color="silver"><b>Uni Mall <br/>5th floor 15th Avenue-Suite 214. IND</b></font></p>
+                <h5><font face="Helvetica">Phone number</font></h5>
+                <p><font face="Helvetica" size="2" color="silver"><b>+91-98736337379</font></p>
+                <h5><font face="Helvetica">Email</font></h5>
+                <p><font face="Helvetica" color="silver" size="2"><b>supportHarmonnyHaven@gmail.com</font></p>
+                <a target="_blank" href="https://www.facebook.com"><img height="30" src="image/fb.png" alt="Facebook"/></a>
+                <a target="_blank" href="https://mail.google.com"><img height="30" src="image/googleplus.png" alt="Google plus"/></a>
+                <a target="_blank" href="https://www.linkedin.com"><img height="30" src="image/linkedin.png" alt="Linkedin"/></a>
+            </td>
+        </tr>
+    </table>
+    <script>
+
+        function sendMessage(){
+          alert("You have login sucessfully! Welcome to The Family");
+          setTimeout(async() => {
+                          window.location.href = "intro.html"
+                    }, 1000);
+        }
+      </script>
+</body>
+</html>

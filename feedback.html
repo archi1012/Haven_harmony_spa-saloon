@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="feedback.css">
+        <link rel = "icon" href =  "https://img.freepik.com/premium-vector/vector-logo-design-beauty-salon-hair-salon-cosmetic-design-line-face-fashion-concept-beauty-minimalist-vector-illustration_501705-155.jpg">
+        <title>Feedback</title>
+
+      </head>
+      <a href="intro.html">"-Back"</a>
+      
+      <form>      
+        <input name="name" id="name" type="text" class="feedback-input" placeholder="Your name" />   
+        <input name="email" id="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="text" id="comment" class="feedback-input" placeholder="Feedback"></textarea>
+        <input type="button" onclick="sendMessage()" value="SUBMIT"/>
+      </form>
+      
+      <script> 
+        const tag = `${document.getElementById("name").value}`;
+        const email = `${document.getElementById("email").value}`;
+        const comment = `${document.getElementById("comment").value}`
+         
+          function sendMessage() {
+                  alert("Your feedback has been submmitted and sent! Thanks for the feedback :3");
+              setTimeout(async() => {
+                    window.location.href = "intro.html"
+              }, 1000);
+        } 
+       </script>
+      
+</html>
